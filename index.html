@@ -20,7 +20,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Abel&family=Barlow&family=Dosis:wght@500&display=swap"
       rel="stylesheet"
     />
-
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
     <!-- My CSS -->
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -28,10 +34,11 @@
     <title>Sayantan's space | A full stack web developer</title>
   </head>
   <body>
-    <section class="container-fluid">
+    <section class="container-fluid" id="home">
       <nav class="navbar navbar-expand-md navbar-light">
         <img
           class="navbar-brand logo"
+          type="button"
           href="#home"
           src="res/logo.png"
           alt="logo"
@@ -53,15 +60,213 @@
         </div>
       </nav>
 
-      <div class="title ml-auto">
-        <h1 class="title-head">
+      <div class="title">
+        <h1>
           Designer and Full Stack <span class="highlight">web</span> Developer
         </h1>
         <p>
           I design beautifully simple things, and I code things efficiently
           behind the hood.
         </p>
-        <img src="res/sa-avatar.svg" alt="" />
+        <img src="res/sa-avatar.svg" alt="avatar" />
+      </div>
+
+      <div class="title-svg">
+        <img src="res/hero.svg" alt="hero" />
+      </div>
+    </section>
+
+    <section class="container-fluid" id="about">
+      <div class="about">
+        <hr />
+        <h1>Hi, I'm Sayantan. Nice to meet you.</h1>
+        <p>
+          I'm a full stack web developer based in Kolkata, India. Since
+          beginning my journey as a freelance developer, I've done remote work
+          for agencies, consulted for startups, and collaborated with talented
+          people to create digital products for both business and consumer use.
+          I'm quietly confident, naturally curious, and perpetually working on
+          improving my chops one problem at a time.
+        </p>
+        <hr />
+      </div>
+    </section>
+
+    <section class="container" id="skills">
+      <div class="skills row">
+        <div class="col-lg-4 skills-col" id="skills-col-1">
+          <i class="fas fa-pencil-ruler fa-3x"></i>
+          <h3>Designer</h3>
+          <p>
+            I value simple content structure, clean design patterns, and
+            thoughtful interactions.
+          </p>
+          <h5>Things I design:</h5>
+          <p>UX, UI, Web, Mobile, Apps</p>
+          <h5>Tools:</h5>
+          <p>
+            Balsamiq Mockups <br />
+            Photoshop <br />
+            Illustrator <br />
+            Pen & Paper <br />
+            Sketch <br />
+            Webflow <br />
+            Pexels <br />
+            UI Patterns <br />
+            Color Hunt
+          </p>
+        </div>
+        <div class="col-lg-4 skills-col" id="skills-col-2">
+          <i class="fas fa-code fa-3x"></i>
+          <h3>Front-end Developer</h3>
+          <p>
+            I like to code things from scratch, and enjoy bringing ideas to life
+            in the browser.
+          </p>
+          <h5>Scripts I write:</h5>
+          <p>HTML, CSS, Sass, Less, JavaScript</p>
+          <h5>Tools:</h5>
+          <p>
+            VS Code <br />
+            Bitbucket <br />
+            Bootstrap <br />
+            Bulma <br />
+            Codekit <br />
+            Codepen <br />
+            Github <br />
+            Gitlab <br />
+            PowerShell
+          </p>
+        </div>
+        <div class="col-lg-4 skills-col" id="skills-col-3">
+          <i class="fas fa-server fa-3x"></i>
+          <h3>Back-end Developer</h3>
+          <p>
+            I genuinely care about efficiency, and build solid structures behind
+            fany designs.
+          </p>
+          <h5>Languages I speak:</h5>
+          <p>C++, Python, Java, Flutter, SQL</p>
+          <h5>Tools</h5>
+          <p>
+            IntelliJ Idea <br />
+            Android Studio <br />
+            Node JS <br />
+            Express JS <br />
+            MySQL <br />
+            MongoDB <br />
+            FireBase <br />
+            Apache <br />
+            XAMPP
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid" id="#work">
+      <div class="work">
+        <h1>My Recent Work</h1>
+        <p>Here are a few design projects I've worked on recently.</p>
+        <div
+          id="carousel"
+          class="carousel slide carousel-fade"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="2000">
+              <img src="res/website1.png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <!-- Slide Caption -->
+              </div>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+              <img src="res/website2.png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <!-- Slide Caption -->
+              </div>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+              <img src="res/website3.png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <!-- Slide Caption -->
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev bg-dark"
+            href="#carousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next bg-dark"
+            href="#carousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="final-section">
+      <div class="final-section">
+        <dir class="row">
+          <div class="col-md-4">
+            <h1>Start a project</h1>
+          </div>
+          <div class="col-md-4">
+            <p>
+              Interested in working together? We should queue up a chat.
+              Coffee's on me.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <button class="my-btn">Let's do this</button>
+          </div>
+        </dir>
+      </div>
+    </section>
+
+    <section class="container-fluid" id="footer">
+      <div class="footer">
+        <img src="res/logo_white.png" class="logo" alt="" />
+        <h4>Living, learning, & leveling up one day at a time.</h4>
+        <div class="row">
+          <div class="col-lg-2">
+            <i class="fab fa-facebook-f fa-2x"></i>
+          </div>
+          <div class="col-lg-2">
+            <i class="fab fa-twitter fa-2x"></i>
+          </div>
+          <div class="col-lg-2">
+            <i class="fab fa-whatsapp fa-2x"></i>
+          </div>
+          <div class="col-lg-2">
+            <i class="fab fa-linkedin-in fa-2x"></i>
+          </div>
+          <div class="col-lg-2">
+            <i class="fab fa-instagram fa-2x"></i>
+          </div>
+          <div class="col-lg-2">
+            <i class="fab fa-github fa-2x"></i>
+          </div>
+        </div>
+        <p>Handcrafted by me.</p>
+        <p>
+          Made with
+          <i class="fab fa-bootstrap"></i>
+          BOOTSTRAP
+        </p>
       </div>
     </section>
 
